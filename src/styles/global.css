@@ -1,0 +1,77 @@
+:root {
+    --bg: #000000;
+    --bg-elev: #111;
+    --text: #ffffff;
+    --muted: #aaaaaa;
+    --card: #1a1a1a;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+}
+
+
+/* 滚动条样式优化 */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(99, 180, 150, 0.6);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 180, 150, 0.9);
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* Firefox 滚动条样式 */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 180, 150, 0.6) rgba(255, 255, 255, 0.05);
+}
+
+.app-root {
+    min-height: 100%;
+}
+
+.section-header,
+.libraries-page .section-header {
+    color: #fff;
+}
+
+
+/* Basic layout helpers */
+
+.home-page {
+    padding: 0 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
