@@ -8,9 +8,10 @@
     "preview": "vite preview --port 5173"
   },
   "dependencies": {
+    "naive-ui": "^2.40.0",
+    "shiki": "^4.0.2",
     "vue": "^3.2.47",
-    "vue-router": "^4.0.16",
-    "naive-ui": "^2.40.0"
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

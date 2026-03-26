@@ -12,6 +12,7 @@ const categories = [
   { id: 'build', name: '构建工具' },
   { id: 'css', name: 'CSS 框架' },
   { id: 'chart', name: '图表可视化' },
+  { id: 'map', name: '地图库' },
   { id: 'browser-cache', name: '浏览器端缓存库' },
   { id: 'node-cache', name: 'Node.js 缓存库' },
   { id: 'nodejs', name: 'Node.js 生态' },
@@ -67,6 +68,14 @@ const libraries = [
   { id: 'd3', name: 'D3.js', category: '图表可视化', description: '数据驱动的可视化库', tags: ['Visualization'], repo: 'https://d3js.org' },
   { id: 'antv', name: 'AntV', category: '图表可视化', description: '蚂蚁集团可视化解决方案', tags: ['Visualization'], repo: 'https://antv.antgroup.com' },
   { id: 'threejs', name: 'Three.js', category: '图表可视化', description: '3D 图形库', tags: ['3D'], repo: 'https://threejs.org' },
+
+  // 地图库
+  { id: 'openlayers', name: 'OpenLayers', category: '地图库', description: '开源的 JavaScript 地图库', tags: ['Map', 'Open Source'], repo: 'https://openlayers.org' },
+  { id: 'mapbox', name: 'Mapbox GL JS', category: '地图库', description: '基于 WebGL 的交互式地图库', tags: ['Map', 'WebGL'], repo: 'https://www.mapbox.com/mapbox-gl-js' },
+  { id: 'leaflet', name: 'Leaflet', category: '地图库', description: '轻量级开源地图库', tags: ['Map', 'Lightweight'], repo: 'https://leafletjs.com' },
+  { id: 'google-maps', name: 'Google Maps JS API', category: '地图库', description: 'Google 地图 JavaScript API', tags: ['Map', 'Google'], repo: 'https://developers.google.com/maps/documentation/javascript' },
+  { id: 'amap', name: '高德地图 API', category: '地图库', description: '高德地图 JavaScript API', tags: ['Map', 'China'], repo: 'https://lbs.amap.com/api/javascript-api' },
+  { id: 'baidu-map', name: '百度地图 API', category: '地图库', description: '百度地图 JavaScript API', tags: ['Map', 'China'], repo: 'https://lbsyun.baidu.com/index.php?title=jspopular' },
 
   // 浏览器端缓存库
   { id: 'localforage', name: 'localforage', category: '浏览器端缓存库', description: '客户端存储增强库', tags: ['Cache', 'Client', 'Storage'], repo: 'https://github.com/localForage/localForage' },

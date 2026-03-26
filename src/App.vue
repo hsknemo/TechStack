@@ -16,13 +16,15 @@ const router = useRouter()
 const menuOptions = [
   { label: '前端组件库', key: 'home' },
   { label: '前端的面试题', key: 'interview' },
-  { label: '前端学习及进阶路线', key: 'learning-path' }
+  { label: '前端学习及进阶路线', key: 'learning-path' },
+  { label: '前端性能优化', key: 'performance' }
 ]
 
 function handleMenuUpdate(key) {
   if (key === 'home') router.push('/')
   if (key === 'interview') router.push('/interview')
   if (key === 'learning-path') router.push('/learning-path')
+  if (key === 'performance') router.push('/performance')
 }
 </script>
 
