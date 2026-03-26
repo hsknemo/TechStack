@@ -15,6 +15,8 @@ import LibraryDetail from "./pages/LibraryDetail.vue";
 import LearningPath from "./pages/LearningPath.vue";
 import Performance from "./pages/Performance.vue";
 import AI from "./pages/AI.vue";
+import Git from "./pages/Git.vue";
+import Linux from "./pages/Linux.vue";
 import NaiveUI from "naive-ui";
 
 const routes = [
@@ -23,6 +25,8 @@ const routes = [
     { path: "/learning-path", component: LearningPath },
     { path: "/performance", component: Performance },
     { path: "/ai", component: AI },
+    { path: "/git", component: Git },
+    { path: "/linux", component: Linux },
     { path: "/library/:id", component: LibraryDetail, props: true },
 ];
 

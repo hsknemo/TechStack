@@ -11,7 +11,9 @@ const menuOptions = [
   { label: '前端的面试题', key: 'interview' },
   { label: '前端学习及进阶路线', key: 'learning-path' },
   { label: '前端性能优化', key: 'performance' },
-  { label: 'AI 相关知识', key: 'ai' }
+  { label: 'AI 相关知识', key: 'ai' },
+  { label: 'Git 命令', key: 'git' },
+  { label: 'Linux 命令', key: 'linux' }
 ]
 
 function handleMenuUpdate(key) {
@@ -20,6 +22,8 @@ function handleMenuUpdate(key) {
   if (key === 'learning-path') router.push('/learning-path')
   if (key === 'performance') router.push('/performance')
   if (key === 'ai') router.push('/ai')
+  if (key === 'git') router.push('/git')
+  if (key === 'linux') router.push('/linux')
 }
 </script>
 
