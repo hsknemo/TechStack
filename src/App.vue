@@ -1,11 +1,4 @@
-<!--
- * @Author: qinkai 937817514@qq.com
- * @Date: 2026-03-25 07:29:50
- * @LastEditors: qinkai 937817514@qq.com
- * @LastEditTime: 2026-03-25 09:29:55
- * @FilePath: /tech/src/App.vue
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+
 <script setup>
 import { NConfigProvider, NLayout, NLayoutHeader, NLayoutContent, NLayoutFooter, NMenu, NButton, NSpace, darkTheme } from 'naive-ui'
 import { useRouter } from 'vue-router'
@@ -17,7 +10,8 @@ const menuOptions = [
   { label: '前端组件库', key: 'home' },
   { label: '前端的面试题', key: 'interview' },
   { label: '前端学习及进阶路线', key: 'learning-path' },
-  { label: '前端性能优化', key: 'performance' }
+  { label: '前端性能优化', key: 'performance' },
+  { label: 'AI 相关知识', key: 'ai' }
 ]
 
 function handleMenuUpdate(key) {
@@ -25,6 +19,7 @@ function handleMenuUpdate(key) {
   if (key === 'interview') router.push('/interview')
   if (key === 'learning-path') router.push('/learning-path')
   if (key === 'performance') router.push('/performance')
+  if (key === 'ai') router.push('/ai')
 }
 </script>
 

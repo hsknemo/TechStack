@@ -14,19 +14,21 @@ import Libraries from "./pages/Libraries.vue";
 import LibraryDetail from "./pages/LibraryDetail.vue";
 import LearningPath from "./pages/LearningPath.vue";
 import Performance from "./pages/Performance.vue";
+import AI from "./pages/AI.vue";
 import NaiveUI from "naive-ui";
 
 const routes = [
-  { path: "/", component: Home },
-  { path: "/interview", component: Libraries },
-  { path: "/learning-path", component: LearningPath },
-  { path: "/performance", component: Performance },
-  { path: "/library/:id", component: LibraryDetail, props: true },
+    { path: "/", component: Home },
+    { path: "/interview", component: Libraries },
+    { path: "/learning-path", component: LearningPath },
+    { path: "/performance", component: Performance },
+    { path: "/ai", component: AI },
+    { path: "/library/:id", component: LibraryDetail, props: true },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+    history: createWebHistory(),
+    routes,
 });
 
 const app = createApp(App);
